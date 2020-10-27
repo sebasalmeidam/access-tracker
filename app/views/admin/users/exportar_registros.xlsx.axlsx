@@ -1,0 +1,9 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Registros") do |sheet|
+  sheet.add_row ["nombre", "fecha", "entrada", "salida", "empezo_almuerzo", "termino_almuerzo"]
+   
+  @registros.each do |registro|
+    nombre = "#{registro.personal.nombres} #{registro.personal.apellidos}"
+    sheet.add_row [nombre, registro.fecha, registro.entrada, registro.salida, registro.empezo_almuerzo, registro.termino_almuerzo ]
+  end
+end

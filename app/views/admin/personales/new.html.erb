@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1>Agregar Personal</h1>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-8">
+		<%= form_with model: [:admin, @personal], local: true do |form| %>
+			<%= form.text_field :nombres, placeholder: 'Nombres', class: 'form-control mb-3' %>
+			<%= form.text_field :apellidos, placeholder: 'Apellidos', class: 'form-control mb-3' %>
+			<%= form.text_field :codigo, placeholder: 'Nombres', class: 'form-control mb-3' %>
+			<%= form.submit 'Enviar', class: 'btn btn-block btn-success' %>
+		<% end %>
+	</div>
+</div>

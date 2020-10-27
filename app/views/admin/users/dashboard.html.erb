@@ -1,0 +1,21 @@
+
+<div class="row">
+	<div class="col-md-12">
+		<h1>hola gente</h1>
+		<%= link_to 'Cerrar Sesión', destroy_user_session_path, method: :delete %>
+	</div>	
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<h2>Personal Registrado</h2>		
+		<p>Total: <%= @personales.size %> | <%= link_to 'Ver todos', admin_personales_path %> | <%= link_to 'Agregar nuevo', new_admin_personal_path %></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<h2>Exportar Registros</h2>		
+		<p><%= link_to 'Exportar Todo', exportar_registros_admin_users_path(format: 'xlsx') %></p>
+	</div>
+</div>

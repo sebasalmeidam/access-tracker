@@ -1,0 +1,40 @@
+<div class="row">
+	<div class="col-md-12">
+	<h1>
+		Lista de Personal
+		<%= link_to 'Agregar', new_admin_personal_path, class: 'btn btn-sm btn-success' %>
+		<%= link_to 'Regresar', dashboard_admin_users_path, class: 'btn btn-primary btn-sm' %>
+	</h1>		
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-condensed table-small table-hover">
+			<thead>
+				<tr>
+					<th>Nombres</th>
+					<th>Apellidos</th>
+					<th>Código</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<% if @personales.any? %>
+					<% @personales.each do |personal| %>
+						<tr>
+							<td><%= personal.nombres %></td>
+							<td><%= personal.apellidos %></td>
+							<td><%= personal.codigo.nil? ? 'No' : 'Si' %></td>
+							<td><%= personal.codigo %></td>
+							<td><%= link_to 'Eliminar', admin_personal_path(personal), method: :delete, data: {confirm: 'Estás Seguro?'} , class: 'btn btn-danger btn-sm' %></td>
+						</tr>
+					<% end %>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+

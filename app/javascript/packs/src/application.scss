@@ -1,0 +1,33 @@
+@import '~bootstrap/scss/bootstrap';
+
+.btn-big {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.card-container {
+	display: block;
+	width: 100%;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 126px;
+	background: #17a2b8;
+	border-radius: 0.25rem;
+}
+
+.card {
+	border: none;
+}
+
+.card-body {
+	padding: 0.5rem;
+}
+
+input.form-control {
+	padding-right: 5px;
+}
+
+.regresar {
+	color: white !important;
+}
