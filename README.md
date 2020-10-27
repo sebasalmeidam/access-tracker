@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ROR app to track when employees arrive, go out to eat, return and go home.
 
-Things you may want to cover:
+## Features:
 
-* Ruby version
+* Ruby on Rails
 
-* System dependencies
+* React main screen
 
-* Configuration
+* Mysql
 
-* Database creation
+* Pending stadistics on app
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Electron app created for users, so they only have access to main screen on site.
